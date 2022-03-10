@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav class="sidebar close">
+        <header>
+            <div class="image-text">
+                <span class="image">
+                    <img src="logo.jpg" alt="logo">
+                </span>
+                <div class="text header-text">
+                   <span class="name">Admin</span>
+                   <span class="profession">Web Developer</span>
+                </div>
+            </div>
+            <i class="bx bx-chevron-right toggle"></i>
+        </header>
+
+        <div class="menu-bar">
+            <div class="menu">
+                <ul class="menu-links">
+                <li class="search-box">
+                   
+                        <i class="bx bx-search icons"></i>
+                        <input type="search" placeholder="Search...">
+                   
+                </li>
+                <li class="nav-links">
+                   <a href="#">
+                       <i class="bx bx-home-alt icons"></i>
+                       <span class="text nav-text">Dashboard</span>
+                   </a>
+               </li>
+               <li class="nav-links">
+                   <a href="#">
+                       <i class="bx bx-bar-chart-alt-2 icons"></i>
+                       <span class="text nav-text">Revenue</span>
+                   </a>
+               </li>
+               <li class="nav-links">
+                   <a href="#">
+                       <i class="bx bx-bell icons"></i>
+                       <span class="text nav-text">notification</span>
+                   </a>
+               </li>
+               <li class="nav-links">
+                   <a href="#">
+                       <i class="bx bx-bar-chart-alt icons"></i>
+                       <span class="text nav-text">Analytics</span>
+                   </a>
+               </li>
+               <li class="nav-links">
+                   <a href="#">
+                       <i class="bx bx-heart icons"></i>
+                       <span class="text nav-text">Likes</span>
+                   </a>
+               </li>
+               <li class="nav-links">
+                   <a href="#">
+                       <i class="bx bx-wallet icons"></i>
+                       <span class="text nav-text">Wallets</span>
+                   </a>
+               </li>
+           </ul>
+            </div>
+
+            <div class="bottom-content">
+               <li class="">
+                   <a href="#">
+                       <i class="bx bx-log-out icons"></i>
+                       <span class="text nav-text">Logout</span>
+                   </a>
+               </li>
+               <li class="mode">
+                   <div class="moon-sun">
+                       <i class="bx bx-moon icons moon"></i>
+                   </div>
+                   <span class="mode-text text">Dark mode</span>
+                   <div class="toggle-switch">
+                       <span class="switch"></span>
+                   </div>
+               </li>
+            </div>
+        </div>
+    </nav>
+    <main class="main-dash">
+         <div class="graf-time">
+             <div class="graf">
+                 <div class="panel">
+                     <div>
+                         <h1 class="ola">Olá Daniel, seja bem-vindo novamente!</h1>
+                     </div>
+                     <div>
+                         <img class="image_homem" src="homem.svg" alt="homem" >
+                     </div>
+                 </div>
+                 <div class="tree-graf">
+                       <div class="graf_one">
+                           <canvas id="myChart"></canvas>
+                       </div>
+                       <div class="graf_two">
+                        <canvas class="mySecondChart"></canvas>
+                       </div>
+                       <div class="graf_three">
+                           <span>Hoje é dia:</span>
+                           <span class="dia"></h2>
+                        </div>
+                 </div>
+            
+                 <div class="two-graf">
+                     <div class="first_graf">
+                        <canvas class="mythreeChart"></canvas>
+                     </div>
+                     <div class="second_graf">
+                        <canvas class="myfourChart"></canvas>
+                     </div>
+                 </div>
+             </div>
+             <div class="time">
+                 <div class="notific">
+                     <h3 class="text-notif">Notificações</h3>
+                     <div class="box-noti">
+                         <div class="notificacoes">
+                            <i class='bx bx-chat icon'></i>  
+                             <span class="text-not">Olá daniel, já conseguimos modificar a Dashboard...</span>
+                        </div>
+                        <div class="notificacoes_two">
+                            <i class='bx bx-chat icon'></i>  
+                             <span class="text-not">Olá é a Carla, o front-end do nosso ultimo cliente já esta pronto...</span>
+                        </div>
+                        
+                     </div>
+                 </div>
+                 <div class="peoples_on">
+                       <div class="peoples">
+                        <h3 class="text-notif">Contatos</h3>
+                           <div class="maria">
+                            <i class='bx bxs-circle circle'></i>
+                            <span>Maria Oliveira Fagundes</span>
+                           </div>
+                           <div class="carlos">
+                            <i class='bx bxs-circle circle'></i>
+                            <span>Carlos Nunes Pereira</span>
+                           </div>
+                       </div>
+                 </div>
+             </div>
+         </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
